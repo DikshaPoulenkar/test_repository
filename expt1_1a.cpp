@@ -1,7 +1,7 @@
 //pass by reference
 #include<stdio.h>
 #include<string.h>
-struct student
+struct students
 {
 	char name[7];
 	int rollno;
@@ -9,7 +9,7 @@ struct student
 }s1;
 
 
-void output(student *s2);
+void output(students *s2);
 	
 int main()
 {
@@ -20,7 +20,7 @@ int main()
 }
 
 
-void output(student *s2)
+void output(students *s2)
 {
 	strcpy(s2 -> name,"diksha");
 	s2 -> rollno= 36;
